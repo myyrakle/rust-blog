@@ -1,6 +1,6 @@
-# pretzelhammer's Rust blog 🦀
+# pretzelhammer의 Rust 블로그 🦀
 
-I write educational content for Rust beginners and Rust advanced beginners.
+Rust 초심자들에게 유익한 내용들을 주로 작성합니다.
 
 My posts are listed below in reverse chronological order.
 
