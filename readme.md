@@ -12,7 +12,7 @@ Rust 초심자들에게 유익한 내용들을 주로 작성합니다.
 
 ## 알림
 
-[Follow pretzelhammer on Twitter](https://twitter.com/pretzelhammer) to get notified when a new blog post gets published!
+블로그에 새 포스트가 작성됐을 때 알림을 받고 싶다면 트위터에서 [pretzelhammer](https://twitter.com/pretzelhammer)를 팔로우하세요!
 
 ## 피드백
 
