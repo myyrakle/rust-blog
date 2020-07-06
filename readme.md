@@ -2,26 +2,29 @@
 
 Rust 초심자들에게 유익한 내용들을 주로 작성합니다.
 
-My posts are listed below in reverse chronological order.
+제 포스트들은 역순으로 아래에 나열해놨어요.
 
-| Date | Title |
+| 날짜 | 제목 |
 |-|-|
 | 2020-05-19 | [Common Rust Lifetime Misconceptions](./posts/common-rust-lifetime-misconceptions.md) |
 | 2020-05-09 | [Learning Rust in 2020](./posts/learning-rust-in-2020.md) |
 | 2020-05-02 | [Why blog?](./posts/why-blog.md) |
 
-## Notifications
+## 알림
 
 [Follow pretzelhammer on Twitter](https://twitter.com/pretzelhammer) to get notified when a new blog post gets published!
 
-## Feedback
+## 피드백
 
-If you have any feedback please feel welcome to [open an issue](https://github.com/pretzelhammer/rust-blog/issues/new) on this repo. I also accept pull requests for minor fixes like typos and grammar.
+피드백을 원한다면 레포지토리에서 [이슈를 열어주세요.](https://github.com/pretzelhammer/rust-blog/issues/new)
+오타나 문법 같은 자잘한 문제라도 환경합니다.
 
-## Translations
+## 번역
 
-If you wanna translate a blog post into another language that's awesome! Please feel free to fork this repo and promote your translation however you like.
+만약 제 블로그 포스트들이 다른 언어로 번역된다면, 정말 끝내주겠네요!
+마음껏 포크해서 번역을 해주세요.
 
-## Licensing
 
-To be compatible with [Rust](https://github.com/rust-lang/rust), all code examples in this blog are licensed under [Apache License Version 2.0](./license-apache) or [MIT License](./license-mit), at your option.
+## 저작권
+
+[Rust](https://github.com/rust-lang/rust)와 호환됩니다. 이 블로그의 모든 코드 예제는 [Apache License Version 2.0](./license-apache)나 [MIT License](./license-mit)입니다. 원하는대로 고르세요.
