@@ -1,10 +1,10 @@
-# Common Rust Lifetime Misconceptions
+# Rust Lifetime의 흔한 오해
 
 _May 19th, 2020 · 37 minute read · #rust · #lifetimes_
 
-**Table of Contents**
-- [Intro](#intro)
-- [The Misconceptions](#the-misconceptions)
+**개요**
+- [들어가는 말](#intro)
+- [오해들](#the-misconceptions)
     - [1) `T` only contains owned types](#1-t-only-contains-owned-types)
     - [2) if `T: 'static` then `T` must be valid for the entire program](#2-if-t-static-then-t-must-be-valid-for-the-entire-program)
     - [3) `&'a T` and `T: 'a` are the same thing](#3-a-t-and-t-a-are-the-same-thing)
@@ -23,9 +23,15 @@ _May 19th, 2020 · 37 minute read · #rust · #lifetimes_
 
 
 
-## Intro
+## 들어가는 말
 
-I've held all of these misconceptions at some point and I see many beginners struggle with these misconceptions today. Some of my terminology might be non-standard, so here's a table of shorthand phrases I use and what I intend for them to mean.
+I've held all of these misconceptions at some 
+point and I see many beginners struggle with these
+ misconceptions today. 
+Some of my terminology might be non-standard,
+ so here's a table of shorthand phrases 
+I use and what I intend for them to mean.
+
 
 | Phrase | Shorthand for |
 |-|-|
@@ -68,9 +74,9 @@ trait Trait {}
 
 impl<T> Trait for T {}
 
-impl<T> Trait for &T {} // compile error
+impl<T> Trait for &T {} // 컴파일 에러
 
-impl<T> Trait for &mut T {} // compile error
+impl<T> Trait for &mut T {} // 컴파일 에러
 ```
 
 The above program doesn't compile as expected:
@@ -100,9 +106,9 @@ The compiler doesn't allow us to define an implementation of `Trait` for `&T` an
 ```rust
 trait Trait {}
 
-impl<T> Trait for &T {} // compiles
+impl<T> Trait for &T {} // 컴파일
 
-impl<T> Trait for &mut T {} // compiles
+impl<T> Trait for &mut T {} // 컴파일
 ```
 
 **Key Takeaways**
@@ -133,7 +139,7 @@ static BYTES: [u8; 3] = [1, 2, 3];
 static mut MUT_BYTES: [u8; 3] = [1, 2, 3];
 
 fn main() {
-   MUT_BYTES[0] = 99; // compile error, mutating static is unsafe
+   MUT_BYTES[0] = 99; // 컴파일 에러. 가변적인 static은 unsafe
 
     unsafe {
         MUT_BYTES[0] = 99;
