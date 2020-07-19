@@ -25,6 +25,6 @@ Rust 초심자들에게 유익한 내용들을 주로 작성합니다.
 마음껏 포크해서 번역을 해주세요.
 
 
-## 저작권
+## 라이센스
 
 [Rust](https://github.com/rust-lang/rust)와 호환됩니다. 이 블로그의 모든 코드 예제는 [Apache License Version 2.0](./license-apache)나 [MIT License](./license-mit)입니다. 원하는대로 고르세요.
